@@ -69,7 +69,7 @@ imageID info_cubestats(const char *ID_name,
                        const char *outfname)
 {
     imageID  ID, IDm;
-    float    min, max, tot, tot2;
+    float    min = 0.0f, max = 0.0f, tot, tot2;
     uint64_t xysize;
     FILE    *fp;
     int      init = 0;

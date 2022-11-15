@@ -196,6 +196,7 @@ errno_t info_image_streamtiming_stats_disp(double *tdiffvarray,
         if(percbin == percMedianIndex)
         {
             attron(A_BOLD);
+            #pragma GCC diagnostic ignored "-Wformat"
             printw(
                 "%2d/%2d  %6.3f% \%  %6.3f% \%  [%6ld] [%6ld]    %10.3f us\n",
                 percbin,
